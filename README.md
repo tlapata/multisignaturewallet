@@ -1,5 +1,5 @@
 # multisignaturewallet
-Multisig Wallet Smart Contract
+Multisig Wallet Smart Contract\n
 – Anyone should be able to deposit ether into the smart contract
 – The contract creator should be able to input 
 (1): the addresses of the owners and 
