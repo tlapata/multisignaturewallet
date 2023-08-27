@@ -6,7 +6,28 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "ownerOne",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "onwerTwo",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "onwerThree",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_minimum",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -207,11 +228,11 @@
 	},
 	"sources": {
 		"contracts/MultisigWallet.sol": {
-			"keccak256": "0x08e777149af20df73803f5fc965df14e6b5b7c06c1cca6e12fe1d2fb1d82ccad",
+			"keccak256": "0x907780a885fc4e35ffdaa49a0b0fc7da0470fbc383f14d3479e68cd98f24dc4a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cf4b830d0c316fb3a6a8959ba35270512f32a484c1e581b029c7ec4ef95bd2f0",
-				"dweb:/ipfs/QmdF2ZXj7pVk44CPSLRLi9JwVszVkky8n84Lg4xY4fzfPk"
+				"bzz-raw://bddd03a0c337190a5b7c3e853a06c998af259a30ffca83e811e426f805a08471",
+				"dweb:/ipfs/QmRbatXipCt927wipbVRgkutAxVUpz6cj8UxEP2GNLV4Bw"
 			]
 		}
 	},
