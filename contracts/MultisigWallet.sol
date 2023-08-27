@@ -104,6 +104,7 @@ contract MultisigWallet {
         if( transfersScope[_index].ownersAproved.length >= mininimum ) {
             if ( transfer(transfersScope[_index].recipient, transfersScope[_index].amount) ) {
                 transfersScope[_index].tnxSent = true;
+                emit transferedAmounts(transfersScope[_index].amount, msg.sender, transfersScope[_index].recipient);
             }
         }
     }
@@ -116,8 +117,6 @@ contract MultisigWallet {
 
         uint previousSenderBalance = address(this).balance;
         payable (recipient).transfer(amount);
-
-        emit transferedAmounts(amount, msg.sender, recipient);
 
         if ( (address(this).balance == previousSenderBalance - amount) ) {
             return true;

@@ -249,11 +249,11 @@
 	},
 	"sources": {
 		"contracts/MultisigWallet.sol": {
-			"keccak256": "0xc207294fb897dcdab271f3cd1eb13382f6dc35516af1091376afc18ff0465452",
+			"keccak256": "0xd95a0b77dbfaeb9ac95533117444f566affa61ac2333ff3b53b5a4826f62f249",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f3e6497dc6e5e870dcbdc2591587d39322787672ac7353df5b522566d84302c3",
-				"dweb:/ipfs/QmTyAusmUXTJpwpVghh2rtgGYTTZXaasZERZGrThFD3kP5"
+				"bzz-raw://20c83853adf6f05c530cf38a19246701737d1c8dbdfb66a035de8f7941571a37",
+				"dweb:/ipfs/QmSG56YmAea2KdwYuVDMDEiBV1zDGBqnPFtdbma2ZRcTst"
 			]
 		}
 	},
