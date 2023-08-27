@@ -21,9 +21,6 @@ contract MultisigWallet {
     // array of transaction needed for aproval check
     Transfer[] transfersScope;
 
-    // mapping( addess => mapping (transactionID => false/true ))
-    mapping( address => mapping(uint => bool) ) ownersApprovens;
-
     //Should only allow people in the owners list to continue the execution.
     modifier onlyOwners(){
         require(exists(msg.sender));
@@ -49,6 +46,7 @@ contract MultisigWallet {
 
     // events
     event balanceAdded(uint amount, address indexed deliveredTo);
+    event TransferRequestCreated(uint _txid, uint _amount, address _initiator, address _receiver);
     event transferedAmounts(uint amount, address indexed sentFrom, address deliveredTo);
 
 
@@ -64,6 +62,7 @@ contract MultisigWallet {
     function createTnx(address recipient, uint amount) public onlyOwners returns(Transfer[] memory) {
         address[] memory emptyArray;
         transfersScope.push( Transfer(payable(msg.sender), payable(recipient), amount, false, emptyArray ) );
+        emit TransferRequestCreated( (transfersScope.length - 1), amount, msg.sender, recipient);
         return transfersScope;
     }
 

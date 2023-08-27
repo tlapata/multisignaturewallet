@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.21+commit.d9974bed"
 	},
 	"language": "Solidity",
 	"output": {
@@ -30,6 +30,37 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_txid",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_initiator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_receiver",
+						"type": "address"
+					}
+				],
+				"name": "TransferRequestCreated",
+				"type": "event"
 			},
 			{
 				"anonymous": false,
@@ -215,7 +246,7 @@
 		"compilationTarget": {
 			"contracts/MultisigWallet.sol": "MultisigWallet"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -228,11 +259,11 @@
 	},
 	"sources": {
 		"contracts/MultisigWallet.sol": {
-			"keccak256": "0x907780a885fc4e35ffdaa49a0b0fc7da0470fbc383f14d3479e68cd98f24dc4a",
+			"keccak256": "0x4062e4873ede18a2f21ff9ebca81a125509020de83965dda4083167cccd803f8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bddd03a0c337190a5b7c3e853a06c998af259a30ffca83e811e426f805a08471",
-				"dweb:/ipfs/QmRbatXipCt927wipbVRgkutAxVUpz6cj8UxEP2GNLV4Bw"
+				"bzz-raw://dceb5440e7192241e14cb451f4c3ccfa19b60a1209f5cd0029078aa84d6fca02",
+				"dweb:/ipfs/QmbrWzvB6RusS7fSR3Fm7xZuQh5y4zanDLK5twvNKtmbPm"
 			]
 		}
 	},
