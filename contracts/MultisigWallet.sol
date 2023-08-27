@@ -52,7 +52,6 @@ contract MultisigWallet {
 
     // anyone should be able to deposit ether into the contract
     function deposit() public payable returns (uint) {
-        //balance[msg.sender] += msg.value;
         emit balanceAdded(msg.value, msg.sender);
         return address(this).balance;
     }
