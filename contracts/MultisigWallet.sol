@@ -38,11 +38,10 @@ contract MultisigWallet {
     }
 
     // constructor should initialize the owners list and the limit 
-    constructor(address ownerOne, address onwerTwo, address onwerThree, uint _minimum){
-        owners = [ownerOne, onwerTwo, onwerThree];
+    constructor(address[] memory _owners, uint _minimum){
+        owners = _owners;
         mininimum = _minimum;
     }
-
 
     // events
     event balanceAdded(uint amount, address indexed deliveredTo);

@@ -8,19 +8,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "ownerOne",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "onwerTwo",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "onwerThree",
-						"type": "address"
+						"internalType": "address[]",
+						"name": "_owners",
+						"type": "address[]"
 					},
 					{
 						"internalType": "uint256",
@@ -259,11 +249,11 @@
 	},
 	"sources": {
 		"contracts/MultisigWallet.sol": {
-			"keccak256": "0x4062e4873ede18a2f21ff9ebca81a125509020de83965dda4083167cccd803f8",
+			"keccak256": "0xde9a6e7580e187642bed872097b609ca29ae14b548623aec6610920cf65d485a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dceb5440e7192241e14cb451f4c3ccfa19b60a1209f5cd0029078aa84d6fca02",
-				"dweb:/ipfs/QmbrWzvB6RusS7fSR3Fm7xZuQh5y4zanDLK5twvNKtmbPm"
+				"bzz-raw://6b13d66205859684b1404e8ae7578e366e7176322250e7162f9d4e429bae4013",
+				"dweb:/ipfs/QmNpBLUnAUTM4RcfRnMGnrCH75Cidz3LzdAKWcrZckz2Na"
 			]
 		}
 	},
